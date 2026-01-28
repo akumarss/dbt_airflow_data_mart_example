@@ -1,0 +1,12 @@
+name: 'example_mart'
+version: '1.0'
+profile: 'example_profile'
+
+models:
+  example_mart:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table
